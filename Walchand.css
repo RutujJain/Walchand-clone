@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 120px;
+    background-color: #041E42;
+    position: relative;
+    /* text-shadow: 2px 1px 2px black; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.container h2 {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+}
+
+.container h3 {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+.navbar ul{
+    list-style: none;
+    background:white;
+}
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.navbar ul li ul li a{
+    font-size: 10px;
+}
+.navbar ul li ul.DropDown li{
+     display: block;
+}
+.navbar ul li ul.DropDown{
+    width: 100%;
+    background: white;
+    border-top: 4px solid #00CCFF;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.navbar ul li a:hover {
+    background: #E4E4E4;
+}
+.navbar ul li a #icon{
+    transition: 0.3s;
+}
+.navbar ul li ul li a #icon{
+    font-size: 10px;
+    margin-left: 20px;
+}
+.navbar ul li a:hover #icon{
+    rotate: 180deg;
+}
+.navbar ul li:hover ul.DropDown{
+    display: block;
+}
+#icon{
+    font-size: 13px;
+}
+
+.submenu{
+    display: inline-block;
+}
+.Images {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid gray; */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+ 
+#ScrollImages{
+    height:"500px";
+     width:100%;
+}
+
+.page2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* box-shadow: 0 0 2rem 0 rgba(0,0,0,0.3); */
+    justify-content: space-around;
+    background-color: #E1EBEE;
+}
+
+.page2 h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.img1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    top: 40px;
+    left: 90px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: #87CEFA;
+    gap: 20px;
+    font-family: 'Francois One', sans-serif;
+
+}
+
+
+
+.img2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    right: 90px;
+    height: 200px;
+    width: 350px;
+    /* border: 2px solid red; */
+    align-items: center;
+    /* justify-content: center; */
+    color: #87CEFA;
+    font-family: 'Francois One', sans-serif;
+
+}
+
+.img2 h4 {
+    position: relative;
+}
+
+.img2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+
+.img2 ul li {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.img2 ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.img2 ul li a:hover {
+    color: #00CCFF;
+}
+
+.img3 {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.programs {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1100px;
+    background-color:white;
+    flex-direction: column;
+    gap: 60px;
+
+}
+.banner{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #87CEFA;
+    font-family: 'Francois One', sans-serif;
+
+}
+/* colors : #149e9e, #94a3b8 */
+.section_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.section_card{
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 5rem 2rem 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.3);
+    transition: 0.5s;
+    /* border: 2px solid #87CEFA; */
+}
+.section_card::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-62%,-62%);
+    width: 75%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: #87CEFA;
+    z-index: -1;
+    transition: 0.7s;
+}
+.section_card span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.section_card h5{
+    margin-top:10px;
+    position: absolute;
+    color:#00CCFF;
+    font-size: 25px;
+    right: 10px;
+    bottom: 10px;
+
+}
+.section_card:hover h5{
+    color: #041E42;
+}
+.section_card h4{
+    /* border: 2px solid red; */
+    color: #87CEFA;
+    top: 2rem;
+    text-align: center;
+    transition: 0.5s;
+    font-family: 'Francois One', sans-serif;
+
+}
+.section_card p{
+    transition: 0.3s;
+    color: #87CEFA;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.section_card img{
+    max-width: 140px;
+    margin-left: 80px;
+    border-radius: 100%;
+    /* border: 1px solid blue; */
+    transition: 0.3s;
+}
+.section_card:hover::before{
+    width: 600%;
+}
+.section_card:hover :is(h4){
+      color: white;
+}
+.section_card:hover :is(p){
+    color: white;
+}
+.choose{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(20230817_120910.jpg);
+}
+#Text1{
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Francois One', sans-serif;
+    color:#00CCFF;
+}
+.walchand{
+    position: relative;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 30px;
+    padding-left: 50px;
+    
+}
+.walchand p{
+    font-size: 20px;
+    text-align: center;
+    padding-right: 20px;
+    font-family: 'Francois One', sans-serif;
+    color:#fff;
+    
+}
+.card{
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    gap: 30px;
+    /* align-items: center; */
+}
+.card1{
+    position: relative;
+    height: 380px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.card1logo{
+    border-radius: 50%;
+    border: 2px solid #00CCFF;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(WalchandTeacher.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.CardInfo{
+    background: transparent;
+    color: white;
+    height: 200px;
+    margin: 30px;
+    width: 280px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Francois One', sans-serif;
+    text-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+
+}
+.CardInfo h4{
+    color: orange;
+    font-size: 20px;
+}
+.CardInfo p{
+    font-weight:300;
+}
+.card1logo:hover {
+ scale :1.08;
+}
+
+.card2{
+    position: relative;
+    height: 380px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.card2logo{
+    border-radius: 50%;
+    border: 2px solid #00CCFF;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(walchandSkill.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.card2logo:hover{
+    scale: 1.08;
+
+}
+.card3{
+    position: relative;
+    height: 380px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.card3logo{
+    border-radius: 50%;
+    border: 2px solid #00CCFF;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(WalchandDevelopment.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.card3logo:hover{
+    scale: 1.08;
+
+}
+.Education{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Education h3{
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    color: #87CEFA;
+    font-size: 30px;
+}
+.Educontainer{
+    right: 20px;
+    width: 100%;
+    padding:30px;
+    margin: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    background-color: #E1EBEE;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Educontainer #Icon{
+    font-size: 25px;
+    color: #87CEFA;
+}
+#Read{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color:#00CCFF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+#Read:hover{
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),#00CCFF;
+    
+}
+.ImageFooter{
+    width: 100%;
+    height: 130px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.middle h2{
+    color: #041E42;
+}
+.section4 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 140px;
+    background-color: #55696a;
+}
+
+.section4_1 ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    top: 30px;
+    list-style: none;
+}
+
+.section4_1 ul li {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.section4_1 ul li:second-child:hover{
+    background-color:pink;
+}
+
+.section4_1 ul li a {
+    color: white;
+    transition: ease-in-out 1s;
+}
+
+.section4_1 ul li:hover {
+    scale: 1.08;
+}
+
+.section4 h2 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.section4_2 ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    top: 40px;
+    list-style: none;
+}
+
+.section4_2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.section4 h5 {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 60px;
+    letter-spacing: 1px;
+    font-family: 'Kanit', sans-serif;
+
+}
